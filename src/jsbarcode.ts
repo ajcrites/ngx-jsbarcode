@@ -8,6 +8,8 @@ export class JsBarcodeDirective implements AfterViewInit {
   constructor(private el: ElementRef) { }
 
   ngAfterViewInit() {
-    JsBarcode(this.el.nativeElement).init();
+    if (!this.el.nativeElement.dataset.barcoded) {
+      JsBarcode(this.el.nativeElement).init();
+    }
   }
 }
