@@ -1,5 +1,5 @@
 {
-  "version": "0.0.0",
+  "version": "0.0.1",
   "name": "ngx-jsbarcode",
   "main": "lib",
   "types": "lib",
@@ -7,10 +7,12 @@
     "prepublish": "rm -rf lib && ngc"
   },
   "dependencies": {
+    "jsbarcode": "^3.8.0"
+  },
+  "devDependencies": {
     "@angular/compiler": "^4.4.3",
     "@angular/compiler-cli": "^4.4.3",
     "@angular/core": "^4.4.3",
-    "jsbarcode": "^3.8.0",
     "rxjs": "^5.4.3",
     "typescript": "^2.5.3",
     "zone.js": "^0.8.18"
